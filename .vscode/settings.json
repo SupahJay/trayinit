@@ -1,0 +1,18 @@
+{
+  "saveAndRun": {
+    "commands": [
+      {
+        "match": ".css",
+        "cmd": "opencode upload $(echo '${relativeFile}' | tr '\\' '/' | tail -c +40)",
+        "useShortcut": false,
+        "silent": true
+      },
+      {
+        "match": ".html",
+        "cmd": "opencode upload $(echo '${relativeFile}' | tr '\\' '/' | tail -c +40)",
+        "useShortcut": false,
+        "silent": true
+      }
+    ]
+  }
+}

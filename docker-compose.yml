@@ -1,0 +1,13 @@
+version: "3.2"
+services:
+  web:
+    image: teste-ruby2
+    volumes:
+      - ".:/mnt/"
+    stdin_open: true
+    tty: true
+    hostname: 'tray'
+    
+# opencode configure API_KEY PASSWORD THEME_ID
+# command: opencode configure 32be5002c3514e5a5f02d162f1facfa4 b5ad07fa6dc7e25f8b08849119b9b82d 13
+# docker-compose run web bashy
